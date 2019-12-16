@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace NugetCommands
 {
@@ -7,6 +8,7 @@ namespace NugetCommands
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine(JsonConvert.SerializeObject(new { a = "value" }));
         }
     }
 }
